@@ -1,26 +1,11 @@
-name: Receive PR
-
-# read-only repo token
-# no access to secrets
-on:
-  pull_request:
+on: [pull_request_review]
 
 jobs:
-  build:
+  approved_job:
     runs-on: ubuntu-latest
-
-    steps:        
-      - uses: actions/checkout@v2
-
-      # imitation of a build process
-      - name: Build
-        run: /bin/bash ./build.sh
-
-      - name: Save PR number
-        run: |
-          mkdir -p ./pr
-          echo ${{ github.event.number }} > ./pr/NR
-      - uses: actions/upload-artifact@v2
+    name: on-approve
+    steps:
+      - name: Approved action step
+        uses: rbarbazz/on-approve@v1.0
         with:
-          name: pr
-          path: pr/
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
