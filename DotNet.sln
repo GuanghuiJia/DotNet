@@ -5,7 +5,12 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BDAE438B-A24C-48DE-A761-B614AAF46E90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWebApi", "src\AspNetCoreWebApi\AspNetCoreWebApi.csproj", "{C1142B83-5316-47A7-B3F9-EEA2DD6C4415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWebApi", "src\AspNetCoreWebApi\AspNetCoreWebApi.csproj", "{C1142B83-5316-47A7-B3F9-EEA2DD6C4415}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{11AA09B4-1456-4C60-9DF9-08E8E337B5AF}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\production.yml = .github\workflows\production.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
