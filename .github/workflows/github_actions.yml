@@ -2,12 +2,12 @@ name: Production Build and Deploy
 
 on:
   push: 
-    branches: [ "dev" ] 
+    branches: [ "master" ] 
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "master" ]
   pull_request_target:
-    branches: [ "dev" ]
+    branches: [ "master" ]
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment: development
+    environment: production
     permissions:
       contents: read
       packages: write
@@ -59,7 +59,7 @@ jobs:
 
   deploy: 
     runs-on: ubuntu-latest
-    environment: development
+    environment: production
     permissions:
        contents: none
     needs: build
