@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BDAE438B-A24C-48DE-A761-B614AAF46E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWebApi", "src\AspNetCoreWebApi\AspNetCoreWebApi.csproj", "{C1142B83-5316-47A7-B3F9-EEA2DD6C4415}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1142B83-5316-47A7-B3F9-EEA2DD6C4415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1142B83-5316-47A7-B3F9-EEA2DD6C4415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1142B83-5316-47A7-B3F9-EEA2DD6C4415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1142B83-5316-47A7-B3F9-EEA2DD6C4415}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1142B83-5316-47A7-B3F9-EEA2DD6C4415} = {BDAE438B-A24C-48DE-A761-B614AAF46E90}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B22B9B2-8A07-44AE-B3E0-60D2DCF50403}
+	EndGlobalSection
+EndGlobal
