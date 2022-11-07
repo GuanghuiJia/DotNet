@@ -3,6 +3,7 @@ name: Auto Request Review
 on:
   pull_request:
     types: [opened, ready_for_review, reopened]
+  workflow_dispatch:
 
 jobs:
   auto-request-review:
