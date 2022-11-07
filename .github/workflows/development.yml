@@ -1,13 +1,13 @@
-name: Build and Deploy
+name: Development Build and Deploy
 
 on:
   push: 
-    branches: [ "dev" , "development" ] 
+    branches: [ "dev" ] 
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "dev" , "development" ]
+    branches: [ "dev" ]
   pull_request_target:
-    branches: [ "dev" , "development" ]
+    branches: [ "dev" ]
   workflow_dispatch:
 
 permissions:
