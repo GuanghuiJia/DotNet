@@ -1,4 +1,4 @@
-name: Production Build and Deploy
+name: Development Build and Deploy
 
 on:
   push: 
@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
        contents: none
-    needs: build
+    needs: build 
     steps:
       - name: Executing remote ssh commands using password
         uses: appleboy/ssh-action@master
