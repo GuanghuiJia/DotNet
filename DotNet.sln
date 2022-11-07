@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWebApi", "src\Asp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{11AA09B4-1456-4C60-9DF9-08E8E337B5AF}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\production.yml = .github\workflows\production.yml
+		.github\workflows\github_actions.yml = .github\workflows\github_actions.yml
 	EndProjectSection
 EndProject
 Global
