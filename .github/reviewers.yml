@@ -3,3 +3,6 @@ reviewers:
   defaults:
     - GuanghuiJia # username
     
+  per_author:
+    designer_a:
+      - GuanghuiJia # username
