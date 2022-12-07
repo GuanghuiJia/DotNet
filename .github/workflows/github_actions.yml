@@ -1,17 +1,9 @@
-name: Production Build and Deploy
+name: Build and Deploy
 
 on:
-  push: 
-    branches: [ "master" ] 
-    tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ "master" ]
   pull_request_target:
     branches: [ "master" ]
   workflow_dispatch:
-
-permissions:
-  contents: read
 
 env:
   REGISTRY: registry.cn-hangzhou.aliyuncs.com
