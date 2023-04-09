@@ -23,7 +23,7 @@ namespace AspNetCoreWebApi
                 {
                     config.MinimumLevel.Debug()
                         .Enrich.FromLogContext()
-                        .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://123.60.139.100:9200"))
+                        .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://124.223.225.27:9200"))
                         {
                             IndexFormat = "logstash-gh-{0:yyyy.MM}",
                             EmitEventFailure = EmitEventFailureHandling.RaiseCallback,
